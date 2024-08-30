@@ -7,7 +7,14 @@ const port = process.env.PORT || 5000;
 
 
 // middleware
-app.use(cors());
+app.use(cors(
+//   {
+//   origin: ["http://localhost:5173", 
+//     "https://job-tracker-firebase.web.app", 
+//     "https://job-tracker-firebase.firebaseapp.com/"],
+//   credentials: true,
+// }
+));
 app.use(express.json());
 
 
